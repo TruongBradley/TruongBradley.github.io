@@ -1,0 +1,199 @@
+/* The side navigation menu */
+html, body {
+  margin: 0;
+
+  /* Full height */
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* To push all main content to start offscreen*/
+.bgSpacer {
+  z-index: -0;
+  position: relative;
+  background-color: black;
+  opacity: 0;
+  height: 100vh;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ffd60a; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none; /* Removes underline from hyperlink*/
+  font-size: 25px;
+  color: #5b5b5b;
+  display: block; /* Displays as list*/
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Position and style the open button */
+.menuBox {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  width: 5vw;
+  margin-left: 0%; 
+  padding: 0px;
+  text-align: center;
+  transition: margin-left .5s;
+}
+
+/* The menu button */
+.menuBox a {
+  background-color: #0d70cd;
+  color: #d4d1d1;
+  border-radius: 15px;
+  padding: 10px; /* Background color border width*/
+  text-decoration: none; /* Removes underline from hyperlink*/
+  font-size: 25px;
+}
+
+/* Menu button hover effects*/
+.menuBox a:hover {
+  background-color: #478ed1;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.main {
+  opacity: 1;
+  margin-left: 0%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: margin-left .5s;
+  padding: 0 10% 0 10%;
+}
+/* Heading 1 formating inside of main body */
+.main h1 {
+  background-color: #0d70cd;
+  color: #d4d1d1;
+  border-radius: 15px;
+  padding: 10px; /* Background color border width*/
+}
+
+/* Paragraph formating inside of main body */
+.main p {
+  background-color: #0d70cd;
+  color: #d4d1d1;
+  border-radius: 15px;
+  padding: 10px; /* Background color border width*/
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Bottom right text of background image */
+.bottom-right {
+  background-color: #0d70cd;
+  color: #d4d1d1;
+  border-radius: 15px;
+  padding: 10px; /* Background color border width*/
+  position: absolute;
+  bottom: 50px;
+  right: 16px;
+  font-size:xx-large;
+}
+
+/* General multimedia formatting */
+.multimedia {
+  opacity: 1;
+  margin-left: 0%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: margin-left .5s;
+  padding-left: 10%;
+  padding-right: 0;
+}
+
+.multimedia h1 {
+  background-color: #0d70cd;
+  color: #d4d1d1;
+  border-radius: 15px;
+  padding: 10px; /* Background color border width*/
+}
+/* Prep Column */
+.column {
+  float: left;
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Format center column */
+.centerCol{
+  float: left;
+  width: 49%;
+}
+/* Format right column */
+.rightCol{
+  float: right;
+  margin-right: 1%;
+  width: 49%;
+  height: 77vh;
+  overflow-y: auto;
+}
+
+.rightCol h2 {
+  background-color: #0d70cd;
+  color: #d4d1d1;
+  border-radius: 15px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.rightCol h3 {
+  background-color: #0d70cd;
+  color: #d4d1d1;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  padding: 0px 5px 0px 5px;
+}
+
+.rightCol h4 {
+  padding: 0px 5px 0px 5px;
+}
+
+.rightCol p {
+  padding: 0px 5px 0px 5px;
+}
+
+.rightColIMG {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
